@@ -1,0 +1,67 @@
+<%- include header %>
+   <div class="ace-wrapper">
+		<!--导航1-->
+        <header id="ace-header" class="ace-container-shift ace-logo-in ace-head-boxed ace-nav-right">
+        <%-include nav%>
+        </header>
+        <!--导航1-->
+        <!--名片-->
+        <article id="ace-card" class="ace-card bg-primary">
+				<%- include card %>
+				</article>
+        <!--名片-->
+        <!--主体内容-->
+        <div id="ace-content" class="ace-container-shift">
+            <div class="ace-container">
+            	<!--内容侧栏导航-->
+                <div id="ace-nav-wrap" class="hidden-sm hidden-xs">
+                    <div class="ace-nav-cont">
+                        <div id="ace-nav-scroll">
+                            <nav id="ace-nav" class="ace-nav">
+                                <%- include nav-center %>
+                            </nav>
+                        </div>
+                        <div id="ace-nav-tools" class="hidden">
+                            <span class="ace-icon ace-icon-dots-three-horizontal"></span>
+                            <button id="ace-nav-arrow" class="clear-btn">
+                                <span class="ace-icon ace-icon-chevron-thin-down"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="ace-nav-btm"></div>
+                </div>
+				<!--内容侧栏导航-->
+				<!--内容正文-->
+                <div class="ace-paper-stock">
+                    <main class="ace-paper clearfix">
+                        <div class="ace-paper-cont clear-mrg">
+										    		<div class="padd-box-sm">
+												        <header class="search-for">
+												            <h1 class="search-title">搜索结果：
+												            <span>【web关键词】</span></h1>
+												        </header>
+												        <div class="search-result">
+												            <strong class="title-lg text-upper">nothing found</strong>
+												            <form class="search-again">
+												                <div class="form-item-wrap">
+												                    <input class="form-item" id="searchInput" name="searchInput" type="search" placeholder="搜索" value="" size="30" maxlength="80" required="required">
+												                </div>
+												                <div class="form-submit form-item-wrap">
+												                    <input class="btn btn-primary" name="submit" type="submit" id="submit" value="发射">
+												                </div>
+												            </form>
+												        </div>
+												    </div>
+				                </div>
+				            </main>
+        				</div>
+				<!--内容正文-->
+	        </div>
+	    </div>
+        <!--主体内容-->
+        <!--侧栏内容-->
+				<div id="ace-sidebar">
+				<%- include nav-side %>
+				</div>
+				<!--侧栏内容-->
+<%- include footer%>

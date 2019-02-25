@@ -1,0 +1,94 @@
+<%- include header %>
+   <div class="ace-wrapper">
+		<!--导航1-->
+        <header id="ace-header" class="ace-container-shift ace-logo-in ace-head-boxed ace-nav-right">
+        <%-include nav%>
+        </header>
+        <!--导航1-->
+        <!--导航2-->
+        <nav id="ace-nav-sm" class="ace-nav hidden-lg hidden-md">
+        <%- include nav-top %>
+        </nav>
+        <!--导航2-->
+        <!--名片-->
+        <article id="ace-card" class="ace-card bg-primary">
+		<%- include card %>
+		</article>
+        <!--名片-->
+        <!--主体内容-->
+        <div id="ace-content" class="ace-container-shift">
+            <div class="ace-container">
+            	<!--内容侧栏导航-->
+                <div id="ace-nav-wrap" class="hidden-sm hidden-xs">
+                    <div class="ace-nav-cont">
+                        <div id="ace-nav-scroll">
+                            <nav id="ace-nav" class="ace-nav">
+                                <%- include nav-center %>
+                            </nav>
+                        </div>
+                        <div id="ace-nav-tools" class="hidden">
+                            <span class="ace-icon ace-icon-dots-three-horizontal"></span>
+                            <button id="ace-nav-arrow" class="clear-btn">
+                                <span class="ace-icon ace-icon-chevron-thin-down"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="ace-nav-btm"></div>
+                </div>
+				<!--内容侧栏导航-->
+				<!--内容正文-->
+                <div class="ace-paper-stock">
+                    <main class="ace-paper clearfix">
+                        <div class="ace-paper-cont clear-mrg">
+								    <h2 class="title-lg text-upper padd-box">contact me</h2>
+								    <div class="padd-box-xs">
+								        <header class="contact-head">
+								            <ul class="ace-social primary-social clear-list">
+								                <li><a><span class="ace-icon ace-icon-facebook"></span></a></li>
+								                <li><a><span class="ace-icon ace-icon-twitter"></span></a></li>
+								                <li><a><span class="ace-icon ace-icon-google-plus"></span></a></li>
+								                <li><a><span class="ace-icon ace-icon-instagram"></span></a></li>
+								                <li><a><span class="ace-icon ace-icon-pinterest"></span></a></li>
+								            </ul>
+								            <p class="title text-upper">fell free to contact me the core of your marketing</p>
+								        </header>
+								    </div>
+								    <div class="padd-box-sm">
+								        <form action="#" method="post" class="contact-form">
+								            <div class="form-group">
+								                <label class="form-label" for="author">你的名字</label>
+								                <div class="form-item-wrap">
+								                    <input id="author" class="form-item" type="text">
+								                </div>
+								            </div>
+								            <div class="form-group">
+								                <label class="form-label" for="email">你的邮箱</label>
+								                <div class="form-item-wrap">
+								                    <input id="email" class="form-item" type="email" required="required">
+								                </div>
+								            </div>
+								            <div class="form-group">
+								                <label class="form-label" for="comment">你的评论</label>
+								                <div class="form-item-wrap">
+								                    <textarea id="comment" class="form-item"></textarea>
+								                </div>
+								            </div>
+								
+								            <div class="form-submit form-item-wrap">
+								                <input class="btn btn-primary btn-lg" type="submit" value="提交评论">
+								            </div>
+								        </form>
+								    </div>
+				                </div>
+		            </main>
+		        </div>
+				<!--内容正文-->
+	        </div>
+	    </div>
+        <!--主体内容-->
+        <!--侧栏内容-->
+		<div id="ace-sidebar">
+		<%- include nav-side %>
+		</div>
+		<!--侧栏内容-->
+<%- include footer%>
